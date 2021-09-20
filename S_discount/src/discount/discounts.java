@@ -11,9 +11,9 @@ WebDriver driver;
 	
 	
 	
-	public discounts(WebDriver m){
+	public discounts(WebDriver s){
 		
-		this.driver=m;
+		this.driver=s;
 	}
 	
 	@FindBy(xpath = "/html/body/div[1]/div[2]/div[2]/div[1]/div[6]/div[2]/div[1]/div[1]/div/form/div[2]/div[2]/div/div/div[2]/div/div/div/div/div[1]/div[1]/select")
