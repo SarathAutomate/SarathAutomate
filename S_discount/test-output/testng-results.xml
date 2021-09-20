@@ -2,33 +2,25 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-09-17T12:21:54 IST" name="Default suite" finished-at="2021-09-17T12:22:24 IST" duration-ms="29520">
+  <suite started-at="2021-09-20T11:11:24 IST" name="Default suite" finished-at="2021-09-20T11:11:48 IST" duration-ms="24461">
     <groups>
     </groups>
-    <test started-at="2021-09-17T12:21:54 IST" name="Default test" finished-at="2021-09-17T12:22:24 IST" duration-ms="29520">
+    <test started-at="2021-09-20T11:11:24 IST" name="Default test" finished-at="2021-09-20T11:11:48 IST" duration-ms="24461">
       <class name="main.main_testing">
-        <test-method is-config="true" signature="setup()[pri:0, instance:main.main_testing@2928854b]" started-at="2021-09-17T12:21:54 IST" name="setup" finished-at="2021-09-17T12:22:04 IST" duration-ms="9326" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:main.main_testing@30b7c004]" started-at="2021-09-20T11:11:24 IST" name="setup" finished-at="2021-09-20T11:11:33 IST" duration-ms="9241" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="login()[pri:0, instance:main.main_testing@2928854b]" started-at="2021-09-17T12:22:04 IST" name="login" finished-at="2021-09-17T12:22:24 IST" duration-ms="20072" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="login()[pri:0, instance:main.main_testing@30b7c004]" started-at="2021-09-20T11:11:33 IST" name="login" finished-at="2021-09-20T11:11:48 IST" duration-ms="15134" status="FAIL">
+          <exception class="java.lang.RuntimeException">
             <message>
-              <![CDATA[Cannot locate element with text: flat
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'cartrabbit', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-34-generic', java.version: '11.0.11'
-Driver info: driver.version: unknown]]>
+              <![CDATA[java.lang.reflect.InvocationTargetException]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate element with text: flat
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'cartrabbit', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-34-generic', java.version: '11.0.11'
-Driver info: driver.version: unknown
-at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:147)
-at discount.discounts.discounttype(discounts.java:23)
-at main.main_testing.login(main_testing.java:88)
+              <![CDATA[java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+at org.openqa.selenium.support.PageFactory.instantiatePage(PageFactory.java:138)
+at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:64)
+at main.main_testing.login(main_testing.java:87)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -57,9 +49,21 @@ at org.testng.TestNG.run(TestNG.java:1031)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.reflect.InvocationTargetException
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.support.PageFactory.instantiatePage(PageFactory.java:129)
+... 30 more
+Caused by: java.lang.Error: Unresolved compilation problem: 
+Syntax error, insert "}" to complete ClassBody
+
+at discount.discounts.<init>(discounts.java:34)
+... 35 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->

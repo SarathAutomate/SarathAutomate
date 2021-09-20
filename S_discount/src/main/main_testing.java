@@ -85,7 +85,7 @@ public class main_testing {
 //		filterby.Enter_product_name(driver).sendKeys("Uncategorized");
 //		robot.robot(null);
 		PageFactory.initElements(driver, discounts.class);
-discounts.discounttype("flat");
+discounts.discounttype("fixed_price");
 		
 		
 		

@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Sep 17 12:21:54 IST 2021</td>
+<td>Started on:</td><td>Mon Sep 20 11:11:24 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>29 seconds (29520 ms)</td>
+<tr><td>Total time:</td><td>24 seconds (24461 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,14 +76,10 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='main.main_testing.login()'><b>login</b><br>Test class: main.main_testing</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Cannot locate element with text: flat
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
-System info: host: &apos;cartrabbit&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.11.0-34-generic&apos;, java.version: &apos;11.0.11&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:147)
-	at discount.discounts.discounttype(discounts.java:23)
-	at main.main_testing.login(main_testing.java:88)
+<td><div><pre>java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.openqa.selenium.support.PageFactory.instantiatePage(PageFactory.java:138)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:64)
+	at main.main_testing.login(main_testing.java:87)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -112,15 +108,23 @@ Driver info: driver.version: unknown
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1482166692", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1482166692'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate element with text: flat
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
-System info: host: &apos;cartrabbit&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.11.0-34-generic&apos;, java.version: &apos;11.0.11&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:147)
-	at discount.discounts.discounttype(discounts.java:23)
-	at main.main_testing.login(main_testing.java:88)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.support.PageFactory.instantiatePage(PageFactory.java:129)
+	... 30 more
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	Syntax error, insert &quot;}&quot; to complete ClassBody
+
+	at discount.discounts.&lt;init&gt;(discounts.java:34)
+	... 35 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace1364127192", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1364127192'><pre>java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.openqa.selenium.support.PageFactory.instantiatePage(PageFactory.java:138)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:64)
+	at main.main_testing.login(main_testing.java:87)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -149,9 +153,21 @@ Driver info: driver.version: unknown
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.support.PageFactory.instantiatePage(PageFactory.java:129)
+	... 30 more
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	Syntax error, insert &quot;}&quot; to complete ClassBody
+
+	at discount.discounts.&lt;init&gt;(discounts.java:34)
+	... 35 more
 </pre></div></td>
-<td>20</td>
-<td>main.main_testing@2928854b</td></tr>
+<td>15</td>
+<td>main.main_testing@30b7c004</td></tr>
 </table><p>
 </body>
 </html>
